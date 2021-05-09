@@ -1,28 +1,37 @@
-import './App.css';
-import Product from './Product';
+import Store from "./Components/Store";
+import Product from "./Components/Product";
+import Cart from "./Components/Cart";
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className='App'>
-    < Product
-        title='Title'
-        imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
-        body='There is body of a product'
-    />
+    return (
+        <Store>
+            <h3>Produkty</h3>
+            <div className="products">
 
-      < Product
-          title='Title'
-          imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
-          body='There is body of a product'
-      />
+                <Product
+                    title='Laptop 1'
+                    imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
+                    body='More info of a product'
+                />
+                <Product
+                    title='Laptop 2'
+                    imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
+                    body='More info of a product'
+                />
+                <Product
+                    title='Laptop 3'
+                    imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
+                    body='More info of a product'
+                />
+            </div>
+            <div className="carts">
+                <Cart/>
+            </div>
 
-      < Product
-          title='Title'
-          imageUrl='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=e1aa'
-          body='There is body of a product'
-      />
-    </div>
-  );
+        </Store>
+    );
 }
 
 export default App;
