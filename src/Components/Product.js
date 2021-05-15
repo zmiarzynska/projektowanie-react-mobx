@@ -9,7 +9,7 @@ const Product = ({title, imageUrl, body}) => {
         description: body
     });
 
-    const add_to_cart = (title = "", body = "") => {
+    const add_to_cart = () => {
         store.addProduct(product);
         setProduct({name: title, description: body});
     };
