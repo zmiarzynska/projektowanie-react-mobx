@@ -30,7 +30,7 @@ const Product = ({title, imageUrl, body}) => {
                     <p></p>
                 </div>
                 <div className="btn">
-                    <button onClick={() => add_to_cart(title, body)}>Dodaj do koszyka</button>
+                    <button onClick={() => add_to_cart()}>Dodaj do koszyka</button>
 
                 </div>
             </div>
